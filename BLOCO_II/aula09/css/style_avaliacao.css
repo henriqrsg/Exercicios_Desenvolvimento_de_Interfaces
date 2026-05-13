@@ -1,0 +1,107 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-areas:
+        "topo topo"
+        "principal lateral"
+        "base base";
+    height: 100vh;
+}
+
+.header {
+    grid-area: topo;
+    background: #2c3e50; color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sidebar {
+    grid-area: lateral;
+    background: #34495e;
+    padding: 20px;
+}
+
+.main-content {
+    grid-area: principal;
+    background: #ecf0f1;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: base;
+    background: #bdc3c7;
+    line-height: 40px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.user-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-flex a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cards-container {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.botoes-grupo {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    
+    button {
+        background: #fff;
+        font-weight: 500;
+        border-radius: 6px;
+        padding: 10px 30px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.2s;
+        font-weight: 600;
+    }
+}
+
+.btn-sair {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}

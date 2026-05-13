@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #cbd5e0;
+    padding: 40px 20px;
+}
+
+/* 2. CENTRALIZAÇÃO DO CONTEÚDO */
+.container-central {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2d3748;
+}
+
+.secao-kpis {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.quadro-kpi {
+    display: inline-block;
+    width: 45%;
+    margin: 2%;
+    padding: 20px; 
+    background-color: #edf2f7;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    vertical-align: top;
+}
+
+.valor {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2b6cb0;
+}
+
+.alerta-card {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-left: 6px solid;
+    border-radius: 4px;
+}
+
+.erro {
+    background-color: #fff5f5;
+    color: #c53030;
+    border-left-color: #fc8181;
+}
+
+.aviso {
+    background-color: #f0fff4;
+    color: #2f855a;
+    border-left-color: #68d391;
+    margin-bottom: 0;
+}
