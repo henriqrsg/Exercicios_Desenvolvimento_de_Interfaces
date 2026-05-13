@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração de Sensor</title>
+    <link rel="stylesheet" href="css/avaliacao04.css">
+</head>
+<body>
+    <header>
+        <h1>Painel de Registro Técnico</h1>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Credenciais</legend>
+                <label for="user">E-mail:</label>
+                <input type="email" id="user" name="user" required>
+                <br><br>
+                <label for="pass">Senha: </label>
+                <input type="password" id="pass" name="pass" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Status da Inspeção</legend>
+        
+                <label for="data_inst">Data:</label>
+                <input type="date" id="data_inst" name="data_inst"/>
+                
+                <br><br>
+
+                <label for="favorita">Cor do Painel</label>
+                <input type="color" id="favorita" name="favorita" value="#ff0000"/>
+
+                <br><br>
+
+                <label for="volume">Ruído:</label>
+                <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+
+                <br><br>
+
+                <label>Prioridade:</label>
+
+                <input type="radio" id="rotina" name="prioridade" value="rotina">
+                <label for="rotina">Rotina</label>
+
+                <input type="radio" id="urgente" name="prioridade" value="urgente">
+                <label for="urgente">Urgente</label>
+
+                <br><br>
+
+                <label>Verificação:</label>
+
+                <input type="checkbox" id="cabos" name="cabos" value="cabos">
+                <label for="cabos">Cabos</label>
+
+                <input type="checkbox" id="sensores" name="sensores" value="sensores">
+                <label for="sensores">Sensores</label>
+
+                <input type="checkbox" id="estrutura" name="estrutura" value="estrutura">
+                <label for="estrutura">Estrutura</label>
+            </fieldset>
+            
+            <button type="submit">Enviar Registro</button>
+            <button type="reset">Limpar tudo</button>
+        </form>
+    </main>
+    <br>
+</body>
+</html>

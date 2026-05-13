@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Dispositivos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Monitoramento de Dispositivos</h1>
+        <nav><a href="avancado.html">Ver Relatório Avançado</a></nav>
+    </header>
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Dispositivo</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela">
+                <tr>
+                    <td>001</td>
+                    <td>Sensor Térmico</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Câmera IP</td>
+                    <td>Inativo</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script>
+        const tabela = document.getElementById('corpo-tabela');
+
+        const totalLinhas = tabela.getElementsByTagName('tr').length;
+
+        console.log("Total de dispositivos monitorados:" + totalLinhas);
+
+        const linhas = tabela.getElementsByTagName('tr');
+
+        for (let i = 0; i < linhas.length; i++) {
+            let status = linhas[i].cells[2].innerText;
+            if (status === "Inativo") {
+                console.warn("Atenção: Dispositivo " + (i + 1) + " está fora do ar!");
+            }
+        }
+    </script>
+</body>
+</html>
