@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel DDD</title>
+  <link rel="stylesheet" href="ddd.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Painel de Consulta por DDD</h1>
+        <p>Descubra instantaneamente o Estado e as Cidades vinculadas</p>
+
+        <div class="divider"></div>
+
+        <div class="search-box">
+            <div class="input-group">
+                <label>DIGITE O DDD</label>
+                <input type="text" placeholder="DDD" id="inputDDD" maxlength="2">
+            </div>
+            <button class="btn" onclick="buscarDDD()"><span class="icon">🔍</span>Consultar Cidades</button>
+        </div>
+
+        <div id="resultadoDDD"></div>
+
+    </div>
+    <script src="ddd.js"></script>
+</body>
+</html>
