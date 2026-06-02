@@ -3,10 +3,12 @@ async function buscarDDD() {
     const box   = document.getElementById('resultadoDDD');
 
     const ddd = input.value.trim();
+
     if (!ddd) {
         box.innerHTML = `<div class="erro-box">⚠️ Por favor, digite um DDD.</div>`;
         return;
     }
+
     if (ddd.length > 2 || isNaN(ddd)) {
         box.innerHTML = `<div class="erro-box">⚠️ DDD inválido. Digite apenas os 2 dígitos (ex: 61).</div>`;
         return;
@@ -34,8 +36,7 @@ async function buscarDDD() {
                 <div class="cidade-card">
                     <div class="cidade-nome">${cidade}</div>
                     <div class="cidade-regiao">Região Metropolitana (${dados.state})</div>
-                </div>`)
-            .join('');
+                </div>`).join('');
 
         box.innerHTML = `
             <div class="estado-header">
